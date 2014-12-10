@@ -1,4 +1,5 @@
-﻿using Searchinator.Service.Models;
+﻿using Searchinator.Service.Core.Contracts;
+using Searchinator.Service.Models;
 
 namespace Searchinator.Service.Core
 {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
+using Searchinator.Service.App_Start;
 
 namespace Searchinator.Service
 {
@@ -12,6 +13,7 @@ namespace Searchinator.Service
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(JsonFormatterConfig.Register);
         }
     }
 }

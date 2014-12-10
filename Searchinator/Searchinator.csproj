@@ -54,19 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\GeneralInfo.cs" />
-    <Compile Include="Core\GeneralInfoSearch.cs" />
-    <Compile Include="Core\GeneralInfoSectionSearch.cs" />
-    <Compile Include="Core\IBaseSearchRule.cs" />
-    <Compile Include="Core\IGeneralInfoSearchRule.cs" />
-    <Compile Include="Core\IGeneralInfoSectionSearch.cs" />
-    <Compile Include="Core\ISearch.cs" />
-    <Compile Include="Core\PriceFromRule.cs" />
-    <Compile Include="Core\PriceToRule.cs" />
-    <Compile Include="Core\Search.cs" />
-    <Compile Include="Core\SearchQuery.cs" />
-    <Compile Include="Core\TextSearch.cs" />
-    <Compile Include="IocModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

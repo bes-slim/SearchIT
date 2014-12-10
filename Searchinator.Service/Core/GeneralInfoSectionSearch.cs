@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Searchinator.Service.Core.Contracts;
 using Searchinator.Service.Models;
 
 namespace Searchinator.Service.Core
@@ -17,8 +18,17 @@ namespace Searchinator.Service.Core
 
         public string SearchForGeneralInfo(SearchQuery query)
         {
-            return _generalInfoSearchRules.Where(x => x.IsApplicable(query))
-                .Aggregate(string.Empty, (current, x) => current + x.AddGeneralInfoSearch(query));
+            var output = string.Empty;
+            
+            foreach (var generalInfoSearchRule in _generalInfoSearchRules)
+            {
+                if (generalInfoSearchRule.IsApplicable(query))
+                    output += generalInfoSearchRule.AddGeneralInfoSearch(query);
+            }
+
+            return output;
+            //return _generalInfoSearchRules.Where(x => x.IsApplicable(query))
+            //    .Aggregate(string.Empty, (current, x) => current + x.AddGeneralInfoSearch(query));
         }
     }
 }

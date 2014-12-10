@@ -1,10 +1,11 @@
-﻿using Searchinator.Service.Models;
+﻿using Searchinator.Service.Core.Contracts;
+using Searchinator.Service.Models;
 
 namespace Searchinator.Service.Core
 {
     public class TextSearch : IBaseSearchRule
     {
-        public const string SEARCH_FOR_TEXT = "Search for this text ";
+        public const string SEARCH_FOR_TEXT = "Search for this text : ";
 
         public bool IsApplicable(SearchQuery query)
         {

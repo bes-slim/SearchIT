@@ -54,6 +54,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralInfoSectionSearchTests.cs" />
+    <Compile Include="PriceToTests.cs" />
+    <Compile Include="SearchTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

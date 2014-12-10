@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Moq;
-using Searchinator.Core;
+﻿using Moq;
+using Searchinator.Service.Core;
+using Searchinator.Service.Core.Contracts;
+using Searchinator.Service.Models;
 using Xunit;
 
-namespace Searchinator.Tests
+namespace Searchinator.Service.Tests
 {
     public class GeneralInfoSectionSearchTests
     {

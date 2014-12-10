@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using Searchinator.Service.Core;
+using Searchinator.Service.Core.Contracts;
 using Searchinator.Service.Models;
 
 namespace Searchinator.Service.Controllers
@@ -20,9 +21,10 @@ namespace Searchinator.Service.Controllers
             _search = search;
         }
 
-        public string Post([FromBody]SearchQuery query)
+        public object Post([FromBody]SearchQuery query)
         {
-            return _search.SearchFor(query);
+
+            return new { result = _search.SearchFor(query)};
         }
         [HttpGet]
         public decimal Fake()
