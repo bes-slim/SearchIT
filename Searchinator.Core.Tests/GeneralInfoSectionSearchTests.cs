@@ -1,10 +1,9 @@
 ﻿using Moq;
-using Searchinator.Service.Core;
-using Searchinator.Service.Core.Contracts;
-using Searchinator.Service.Models;
+using Searchinator.Core.Contracts;
+using Searchinator.Models;
 using Xunit;
 
-namespace Searchinator.Service.Tests
+namespace Searchinator.Core.Tests
 {
     public class GeneralInfoSectionSearchTests
     {

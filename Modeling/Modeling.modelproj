@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{473301de-b09a-4eaf-9b08-eee743dded2c}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Modeling</Name>
+    <RootNamespace>Modeling</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Modeling.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Searchinator.Core.Client\Searchinator.Core.Client.csproj">
+      <Name>Searchinator.Core.Client</Name>
+      <Project>{9778d9f8-0148-496d-b6b5-dc68c1c533db}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Searchinator.Core.Tests\Searchinator.Core.Tests.csproj">
+      <Name>Searchinator.Core.Tests</Name>
+      <Project>{f2ee9f3f-cb49-466a-ae98-1825dcb525de}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Searchinator.Models\Searchinator.Models.csproj">
+      <Name>Searchinator.Models</Name>
+      <Project>{6ebbedd3-4348-411e-a1f2-f23b3b74aadc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Searchinator.Service.Core\Searchinator.Core.csproj">
+      <Name>Searchinator.Core</Name>
+      <Project>{bbf458fe-70fb-4584-80af-4bf3154910cc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Searchinator.Service.Tests\Searchinator.Service.Tests.csproj">
+      <Name>Searchinator.Service.Tests</Name>
+      <Project>{edf08a53-3077-4a09-ad66-0a6e3bfff791}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Searchinator.Service\Searchinator.Service.csproj">
+      <Name>Searchinator.Service</Name>
+      <Project>{f5061a91-ad1a-4694-bb48-908999c0a4f3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,6 +1,6 @@
-﻿using Searchinator.Service.Models;
+﻿using Searchinator.Models;
 
-namespace Searchinator.Service.Core.Contracts
+namespace Searchinator.Core.Contracts
 {
     public interface ISearch
     {

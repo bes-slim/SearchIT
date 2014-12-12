@@ -1,4 +1,4 @@
-﻿namespace Searchinator.Service.Models
+﻿namespace Searchinator.Models
 {
     public class GeneralInfo
     {

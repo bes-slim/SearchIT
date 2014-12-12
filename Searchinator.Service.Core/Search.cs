@@ -1,9 +1,8 @@
 using System.Collections.Generic;
-using System.Linq;
-using Searchinator.Service.Core.Contracts;
-using Searchinator.Service.Models;
+using Searchinator.Models;
+using Searchinator.Core.Contracts;
 
-namespace Searchinator.Service.Core
+namespace Searchinator.Core
 {
     public class Search : ISearch
     {

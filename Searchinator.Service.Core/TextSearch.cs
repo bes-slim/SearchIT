@@ -1,7 +1,7 @@
-﻿using Searchinator.Service.Core.Contracts;
-using Searchinator.Service.Models;
+﻿using Searchinator.Core.Contracts;
+using Searchinator.Models;
 
-namespace Searchinator.Service.Core
+namespace Searchinator.Core
 {
     public class TextSearch : IBaseSearchRule
     {

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Http.Cors;
-using Searchinator.Service.Core;
-using Searchinator.Service.Core.Contracts;
-using Searchinator.Service.Models;
+using Searchinator.Core.Contracts;
+using Searchinator.Models;
 
 namespace Searchinator.Service.Controllers
 {

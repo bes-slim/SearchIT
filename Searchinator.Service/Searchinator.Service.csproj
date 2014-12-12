@@ -110,18 +110,6 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\SearchController.cs" />
-    <Compile Include="Models\GeneralInfo.cs" />
-    <Compile Include="Core\GeneralInfoSearch.cs" />
-    <Compile Include="Core\GeneralInfoSectionSearch.cs" />
-    <Compile Include="Core\Contracts\IBaseSearchRule.cs" />
-    <Compile Include="Core\Contracts\IGeneralInfoSearchRule.cs" />
-    <Compile Include="Core\Contracts\IGeneralInfoSectionSearch.cs" />
-    <Compile Include="Core\Contracts\ISearch.cs" />
-    <Compile Include="Core\PriceFromRule.cs" />
-    <Compile Include="Core\PriceToRule.cs" />
-    <Compile Include="Core\Search.cs" />
-    <Compile Include="Models\SearchQuery.cs" />
-    <Compile Include="Core\TextSearch.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -138,6 +126,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Searchinator.Models\Searchinator.Models.csproj">
+      <Project>{6ebbedd3-4348-411e-a1f2-f23b3b74aadc}</Project>
+      <Name>Searchinator.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Searchinator.Service.Core\Searchinator.Core.csproj">
+      <Project>{bbf458fe-70fb-4584-80af-4bf3154910cc}</Project>
+      <Name>Searchinator.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

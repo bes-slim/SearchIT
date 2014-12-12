@@ -1,5 +1,5 @@
-﻿using Searchinator.Service.Core;
-using Searchinator.Service.Models;
+﻿using Searchinator.Core;
+using Searchinator.Models;
 using Xunit;
 
 namespace Searchinator.Service.Tests

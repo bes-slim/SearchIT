@@ -1,7 +1,7 @@
-﻿using Searchinator.Service.Core.Contracts;
-using Searchinator.Service.Models;
+﻿using Searchinator.Models;
+using Searchinator.Core.Contracts;
 
-namespace Searchinator.Service.Core
+namespace Searchinator.Core
 {
     /// <summary>
     /// Adapter
@@ -18,7 +18,7 @@ namespace Searchinator.Service.Core
 
         public bool IsApplicable(SearchQuery query)
         {
-            // TODO : not sure.  IsApplicableSection?
+            // TODO : not sure.  maybe IsApplicableSection?
             return query.GeneralInfo != null;
         }
 

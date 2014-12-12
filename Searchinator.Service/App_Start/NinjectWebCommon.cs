@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
-using Searchinator.Service.Core;
-using Searchinator.Service.Core.Contracts;
+using Searchinator.Core;
+using Searchinator.Core.Contracts;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Searchinator.Service.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(Searchinator.Service.App_Start.NinjectWebCommon), "Stop")]

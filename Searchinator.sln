@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchinator.Service", "Searchinator.Service\Searchinator.Service.csproj", "{F5061A91-AD1A-4694-BB48-908999C0A4F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchinator.Service.Tests", "Searchinator.Service.Tests\Searchinator.Service.Tests.csproj", "{EDF08A53-3077-4A09-AD66-0A6E3BFFF791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchinator.Core", "Searchinator.Service.Core\Searchinator.Core.csproj", "{BBF458FE-70FB-4584-80AF-4BF3154910CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchinator.Models", "Searchinator.Models\Searchinator.Models.csproj", "{6EBBEDD3-4348-411E-A1F2-F23B3B74AADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchinator.Core.Tests", "Searchinator.Core.Tests\Searchinator.Core.Tests.csproj", "{F2EE9F3F-CB49-466A-AE98-1825DCB525DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searchinator.Core.Client", "Searchinator.Core.Client\Searchinator.Core.Client.csproj", "{9778D9F8-0148-496D-B6B5-DC68C1C533DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{EDF08A53-3077-4A09-AD66-0A6E3BFFF791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF08A53-3077-4A09-AD66-0A6E3BFFF791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDF08A53-3077-4A09-AD66-0A6E3BFFF791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF458FE-70FB-4584-80AF-4BF3154910CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF458FE-70FB-4584-80AF-4BF3154910CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF458FE-70FB-4584-80AF-4BF3154910CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF458FE-70FB-4584-80AF-4BF3154910CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBBEDD3-4348-411E-A1F2-F23B3B74AADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBBEDD3-4348-411E-A1F2-F23B3B74AADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBBEDD3-4348-411E-A1F2-F23B3B74AADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBBEDD3-4348-411E-A1F2-F23B3B74AADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2EE9F3F-CB49-466A-AE98-1825DCB525DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EE9F3F-CB49-466A-AE98-1825DCB525DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2EE9F3F-CB49-466A-AE98-1825DCB525DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EE9F3F-CB49-466A-AE98-1825DCB525DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9778D9F8-0148-496D-B6B5-DC68C1C533DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9778D9F8-0148-496D-B6B5-DC68C1C533DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9778D9F8-0148-496D-B6B5-DC68C1C533DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9778D9F8-0148-496D-B6B5-DC68C1C533DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
