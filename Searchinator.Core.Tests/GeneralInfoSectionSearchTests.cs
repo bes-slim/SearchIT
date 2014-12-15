@@ -13,7 +13,7 @@ namespace Searchinator.Core.Tests
             // Arrange
             var query = new SearchQuery()
             {
-                Text = "bla bla",
+                Text = "bla  bla",
                 GeneralInfo = new GeneralInfo()
                 {
                     PriceTo = 200,
